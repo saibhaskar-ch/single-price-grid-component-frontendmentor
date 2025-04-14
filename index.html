@@ -16,22 +16,57 @@
 
     <title>Frontend Mentor | Single Price Grid Component</title>
   </head>
-  <body>
-    Join our community 30-day, hassle-free money back guarantee Gain access to
-    our full library of tutorials along with expert code reviews. Perfect for
-    any developers who are serious about honing their skills. Monthly
-    Subscription &dollar;29 per month Full access for less than &dollar;1 a day
-    Sign Up Why Us Tutorials by industry experts Peer &amp; expert code review
-    Coding exercises Access to our GitHub repos Community forum Flashcard decks
-    New videos every week
+  <body class="flex justify-center bg-[hsl(204,43%,93%)]">
+    <!-- For max-width -->
+    <div class="font-karla  min-w-[250px] max-w-[800px] ">
+      <!-- For pushing the footer to bottom -->
+      <div class="flex items-center py-15 px-7">
+        <!-- for the main content and grid for large screens -->
+        <main class=" rounded-md overflow-hidden shadow-xl lg:grid lg:grid-cols-2 lg:grid-rows-1">
+          <header class="bg-white py-6 px-5 lg:p-12 font-bold text-sm lg:col-span-2">
+            <h2 class="text-[hsl(179,47%,52%)] text-lg lg:text-2xl mb-5 lg:mb-7">Join our community</h2>
+            <h3 class="text-[hsl(71,73%,54%)] mb-5 lg:mb-8 lg:text-xl">30-day, hassle-free money back guarantee</h3>
+            <p class="text-[hsl(218,22%,67%)] font-normal leading-[2] lg:text-lg">
+              Gain access to our full library of tutorials along with exper code
+              reviews. Perfect for any developers who are serious about honing
+              their skills.
+            </p>
+          </header>
+          <section class="bg-[hsl(179,62%,43%)] text-white text-sm lg:text-lg font-bold py-6 px-5 lg:p-12">
+            <h3 class="text-lg mb-5 lg:text-xl">Monthly Subscription</h3>
 
-    <footer>
-      <p class="attribution">
-        Challenge by
-        <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
-          >Frontend Mentor</a
-        >.
-      </p>
-    </footer>
+            <p class="text-3xl lg:text-4xl mb-2 flex items-center">&dollar;29 <span class="ml-3 text-sm lg:text-lg font-extralight text-[hsl(204,43%,93%)]">per month</span></p>
+
+            <p class="font-normal mb-7 lg:mb-10">Full access for less than &dollar;1 a day</p>
+
+            <button class="text-center block w-full py-3 lg:py-4 bg-[hsl(71,73%,54%)] rounded-sm shadow-md">Sign Up</button>
+          </section>
+          <section class="bg-[hsl(179,47%,52%)] text-white text-sm lg:text-md py-6 px-5 lg:p-12">
+            <h3 class="text-lg mb-5 lg:text-xl font-bold">Why Us</h3>
+            <ul class="font-light lg:flex lg:flex-col lg:gap-1">
+              <li>Tutorials by industry experts</li>
+              <li>Peer &amp; expert code review</li>
+              <li>Coding exercises</li>
+              <li>Access to our GitHub repos</li>
+              <li>Community forum</li>
+              <li>Flashcard decks</li>
+              <li>New videos every week</li>
+            </ul>
+          </section>
+        </main>
+      </div>
+
+      <footer>
+        <p class="text-center">
+          Challenge by
+          <a
+            class="text-blue-500 hover:underline"
+            href="https://www.frontendmentor.io?ref=challenge"
+            target="_blank"
+            >Frontend Mentor</a
+          >.
+        </p>
+      </footer>
+    </div>
   </body>
 </html>

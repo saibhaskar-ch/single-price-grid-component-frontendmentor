@@ -1,1 +1,15 @@
+@import url("https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,200..800;1,200..800&display=swap");
 @import "tailwindcss";
+
+@theme {
+  --font-karla: "Karla", sans-serif;
+}
+@layer base {
+  body > div {
+    @apply min-h-[100vh];
+  }
+
+  body > div > div {
+    @apply min-h-[96.5vh];
+  }
+}
